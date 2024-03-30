@@ -1,0 +1,17 @@
+Package: DrugInter
+Title: DrugInter: an R package dissecting drug interaction from higher order combination based on random forest
+Version: 0.0.0.9000
+Authors@R: 
+    person("QiMing", "Luo", , "luo_qm@163.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: DrugInter, an R package dissecting drug interaction from higher order combination. DrugInter rank drug pair by calculating Kullback-Leibler divergence of variables’ depth distribution difference to capture the attractiveness between two variables as interaction strength. Effectiveness was evaluated on a compiled dataset by comparing the correlation between true wet lab interaction strength and model predicted one. DrugInter provide most basic parameters such as tree-based routes for random forest, thus enabling further comprehensive explanations and individual expansions, and could be used in general pair-wide variable interaction study.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10)
+Imports: 
+    philentropy,
+    randomForest
+LazyData: true
